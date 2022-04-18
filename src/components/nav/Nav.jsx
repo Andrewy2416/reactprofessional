@@ -5,12 +5,14 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BsBook} from 'react-icons/bs'
 import {AiOutlineFolderOpen} from 'react-icons/ai'
 import {AiOutlineMessage} from 'react-icons/ai'
+import { useState } from 'react'
 
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
-      <a href="#"><AiOutlineHome/></a>
-      <a href="#about"><AiOutlineUser/></a>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''} ><AiOutlineUser/></a>
       <a href="#experience"><BsBook/></a>
       <a href="#portfolio"><AiOutlineFolderOpen/></a>
       <a href="#contact"><AiOutlineMessage/></a>
