@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/profilepicture2.jpg'
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
+import {FaMoneyBillWave} from 'react-icons/fa'
 import {AiFillProject} from 'react-icons/ai'
 
 const About = () => {
@@ -22,13 +22,13 @@ const About = () => {
             <article className='about__card'>
               <FaAward  className='about__icon'/>
               <h5>Experience</h5>
-              <small>7+ years in Business</small>
+              <small>10+ years as an Entrepenuer</small>
             </article>
 
             <article className='about__card'>
-              <FiUsers  className='about__icon'/>
-              <h5>Customers Served</h5>
-              <small>7+ years in Business</small>
+              <FaMoneyBillWave  className='about__icon'/>
+              <h5>Revenue</h5>
+              <small>2m+ Generated</small>
             </article>
 
             <article className='about__card'>
@@ -39,9 +39,11 @@ const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores obcaecati odio, 
-            porro neque repellendus quaerat illo ut fugit provident exercitationem error, 
-            corrupti magnam nemo velit cumque et quas rem? Ipsa!
+            I am a Bay Area-based Full Stack Web Developer and Entrepeneur. I founded
+            DYM Enterprises which developed and launched two major e-commerce websites
+            that together generated over 2m+ in revenue. I am currently looking to enter
+            the Web Development field to combine my skills in Business, Coding, and 
+            Customer Service.  
           </p>
 
           <a href="#contact" className='btn btn-primary'>Contact Me</a>
